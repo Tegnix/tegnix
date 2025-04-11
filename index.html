@@ -142,6 +142,28 @@
                 <p>Address: Rruga Asim Zeneli 1, Tirana, Albania</p>
             </div>
         </div>
+<div id="paypal-button-container-P-67453720YH689364BM74YFCA"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AXXH4igRXOn6z2h8c08TVr24P8hUvcG_EM3VOPH6k0wOztxQfjDMY1SX2QT8hU17UuUrUlaK5Tow0qHM&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-67453720YH689364BM74YFCA',
+          quantity: 1 // The quantity of the product for a subscription
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-67453720YH689364BM74YFCA'); // Renders the PayPal button
+</script>
     </footer>
 </body>
 </html>
