@@ -132,6 +132,19 @@ I<!DOCTYPE html>
             </div>
         </div>
     </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2>Our Pricing Plans</h2>
+            <p>Choose the perfect plan for your business needs</p>
+            <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+            <stripe-pricing-table 
+                pricing-table-id="prctbl_1REeOnKiDAiF20H6TRPYeH1T"
+                publishable-key="pk_live_51RCrEwKiDAiF20H6chy4QKKkhbV3uYZWfEWU3XEWlMqo1GQuOHL3ihutfjMU9GoMTYVGtFwhHq9vvbFPWI8VoBYw00UCGB9Pbz">
+            </stripe-pricing-table>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="contact-info">
@@ -141,30 +154,6 @@ I<!DOCTYPE html>
                 <p>3535 Firewheel Dr, Suite A, Flower Mound TX 75028 </p>
             </div>
         </div>
-        <!--
-<div id="paypal-button-container-P-67453720YH689364BM74YFCA"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AXXH4igRXOn6z2h8c08TVr24P8hUvcG_EM3VOPH6k0wOztxQfjDMY1SX2QT8hU17UuUrUlaK5Tow0qHM&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'rect',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'subscribe'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          /* Creates the subscription */
-          plan_id: 'P-67453720YH689364BM74YFCA',
-          quantity: 1 // The quantity of the product for a subscription
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-      }
-  }).render('#paypal-button-container-P-67453720YH689364BM74YFCA'); // Renders the PayPal button
-</script>
-        -->
     </footer>
 </body>
 </html>
