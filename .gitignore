@@ -1,9 +1,0 @@
-# Ignore everything
-*
-
-# But not the website folder
-!website/
-!website/**
-
-# Ignore .DS_Store
-.DS_Store 
